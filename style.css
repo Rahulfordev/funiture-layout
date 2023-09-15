@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2? family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* -------- Variables ------- */
+
+/***** Color variables ****/
+
+:root {
+  --color-primary: #7e7f7c;
+  --color-secondary: #2f302c;
+}
+
+/***** Font variables *****/
+
+:root {
+  --font-family-Lato: "Lato", sans-serif;
+  --font-family-Montserrat: "Montserrat", sans-serif;
+}
+
+/***** Size variables *****/
+:root {
+  --body-max-width: 120rem;
+}
+
+/* ----- Reset CSS ----- */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0px;
+  padding: 0px;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+body {
+  max-width: var(--body-max-width);
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+header,
+main,
+footer {
+  margin-inline: auto !important;
+}
+
+section,
+footer {
+  margin-top: 85px;
+}
+
+section {
+  padding-bottom: 80px;
+}
+
+/* ========= nav bar ========= */
+
+.nav-parimary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+  margin-inline: auto;
+  max-width: 1200px;
+  text-transform: uppercase;
+}
+
+.nav-parimary__links {
+  display: inline-flex;
+}
+
+.nav-parimary__link {
+  padding: 0 20px;
+}
+
+.nav-parimary__buttons a {
+  padding-right: 44px;
+}
+
+.nav-parimary__buttons button {
+  border: none;
+  font-size: 15px;
+}
+
+/* ========= hero section ========= */
+
+.header-section__hero {
+  background-image: url("image/bg_image.png");
+  background-repeat: no-repeat, repeat;
+  margin-top: 0;
+}
+
+.hero-content {
+  max-width: 600px;
+  padding: 115px 0;
+}
+
+.hero-area {
+  display: flex;
+  justify-content: end;
+}
+
+.hero__subtitle {
+  color: var(--color-secondary);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hero__title {
+  color: var(--color-secondary);
+  font-family: var(--font-family-Montserrat);
+  font-size: 96px;
+  font-weight: 800;
+}
+
+.hero__title span {
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.hero__subtitle--2 {
+  padding: 36px 0 20px 0;
+}
+
+.hero__description {
+  max-width: 374px;
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 500;
+}
+/*  */
+
+.portfolio-title h2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.portfolio-title {
+  text-align: center;
+}
+
+.portfolio-menu__links {
+  display: inline-flex;
+  padding: 36px 0 70px 0;
+}
+
+.portfolio-link {
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.portfolio-cards {
+  display: flex;
+  margin-inline: auto;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 140px;
+}
+
+.card-image img {
+  height: 400px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.card-content {
+  padding-top: 32px;
+  text-align: center;
+}
+
+.content-icon {
+  padding: 12px 0;
+}
+
+.card-content > p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-content > span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* feature-section  */
+
+.feature-section {
+  max-width: 1200px;
+  height: 363px;
+  background-color: #f6f6f6;
+  margin-inline: auto;
+}
+
+.feature-area {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.feature-box-image {
+  padding-top: 144px;
+}
+
+.feature-box-content {
+  padding-top: 97px;
+}
+
+.feature-box-content > p {
+  width: 508px;
+  padding: 16px 0 31px;
+}
+
+.input-button input {
+  border-bottom: 1px solid #d4d4d4;
+  border: none;
+  padding: 12px 103px 14px 5px;
+  outline: none;
+}
+
+.input-button button {
+  padding: 12px 40px;
+  background-color: #222;
+  color: #fff;
+  margin-left: 20px;
+}
+
+/* blog */
+
+.blog-section__content {
+  padding-bottom: 72px;
+  text-align: center;
+}
+
+.blog-section {
+  margin-top: 10rem;
+}
+
+.blog-section__title {
+  padding-bottom: 36px;
+  color: var(--color-secondary);
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.blog-section__description {
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.blog-cards {
+  display: flex;
+  margin-inline: auto;
+  max-width: 1200px;
+  width: 100%;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  gap: 36px;
+}
+
+.blog-card__image img {
+  object-fit: cover;
+  height: 440px;
+  object-position: bottom;
+}
+
+.blog-card__date {
+  padding-top: 24px;
+}
+
+.blog-card__date,
+.blog-card__title {
+  padding-bottom: 16px;
+}
+
+.blog-card__date {
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.blog-card__title {
+  color: var(--color-secondary);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.blog-card__descripton {
+  overflow: hidden;
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.blog-card__links {
+  display: flex;
+  gap: 10px;
+}
+
+.blog-card__link {
+  color: var(--color-secondary);
+  background-color: #f6f6f6;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+/* ========== footer section ========== */
+.feature--footer-section {
+  height: 28rem;
+  margin-inline: auto;
+  max-width: 1200px;
+}
+
+.footer-first-section {
+  display: flex;
+  gap: 8.125rem;
+  justify-content: center;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.footer-first-section::after {
+  content: "";
+  position: absolute;
+  width: 74.125rem;
+  height: 0.0625rem;
+  bottom: 0;
+  right: 0;
+  background: #ececec;
+}
+
+.footer-title {
+  color: var(--color-secondary);
+  font-size: 20px;
+  font-weight: 800;
+  padding-bottom: 28px;
+}
+
+.footer-menu ul li {
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 28px;
+}
+
+.footer__second-section {
+  display: flex;
+  padding-top: 1.5rem;
+  gap: 44.8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.second__section--1 {
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.second__section--2 {
+  display: flex;
+  gap: 2rem;
+}
+
+.second__section--2 i {
+  font-size: 16px;
+}
