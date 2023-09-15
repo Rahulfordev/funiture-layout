@@ -63,7 +63,6 @@ a {
 }
 
 body {
-  max-width: var(--body-max-width);
   min-height: 100vh;
   font-family: "Lato", sans-serif;
 }
@@ -71,7 +70,8 @@ body {
 header,
 main,
 footer {
-  margin-inline: auto !important;
+  max-width: var(--body-max-width);
+  margin-inline: auto;
 }
 
 section,
@@ -128,6 +128,11 @@ section {
 .hero-area {
   display: flex;
   justify-content: end;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 .hero__subtitle {
@@ -141,11 +146,17 @@ section {
   font-family: var(--font-family-Montserrat);
   font-size: 96px;
   font-weight: 800;
+  @media (max-width: 500px) {
+    font-size: 30px;
+  }
 }
 
 .hero__title span {
   font-size: 96px;
   font-weight: 700;
+  @media (max-width: 500px) {
+    font-size: 30px;
+  }
 }
 
 .hero__subtitle--2 {
@@ -219,7 +230,7 @@ section {
 
 .feature-section {
   max-width: 1200px;
-  height: 363px;
+  min-height: 363;
   background-color: #f6f6f6;
   margin-inline: auto;
 }
@@ -228,6 +239,10 @@ section {
   display: flex;
   justify-content: center;
   gap: 40px;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    gap: 0px;
+  }
 }
 
 .feature-box-image {
@@ -236,10 +251,13 @@ section {
 
 .feature-box-content {
   padding-top: 97px;
+  @media (max-width: 500px) {
+    text-align: center;
+  }
 }
 
 .feature-box-content > p {
-  width: 508px;
+  max-width: 508px;
   padding: 16px 0 31px;
 }
 
@@ -289,12 +307,19 @@ section {
   /* flex-wrap: wrap; */
   justify-content: center;
   gap: 36px;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .blog-card__image img {
   object-fit: cover;
   height: 440px;
   object-position: bottom;
+  @media (max-width: 500px) {
+    margin-inline: auto;
+  }
 }
 
 .blog-card__date {
@@ -329,6 +354,9 @@ section {
 .blog-card__links {
   display: flex;
   gap: 10px;
+  @media (max-width: 500px) {
+    justify-content: center;
+  }
 }
 
 .blog-card__link {
@@ -337,7 +365,6 @@ section {
   font-size: 16px;
   font-weight: 500;
   padding: 10px;
-  align-items: flex-start;
 }
 
 /* ========== footer section ========== */
@@ -353,6 +380,11 @@ section {
   justify-content: center;
   padding-bottom: 5rem;
   position: relative;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
 }
 
 .footer-first-section::after {
@@ -385,6 +417,10 @@ section {
   gap: 44.8rem;
   justify-content: center;
   align-items: center;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 .second__section--1 {
