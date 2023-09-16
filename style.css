@@ -205,6 +205,11 @@ section {
   height: 400px;
   object-fit: cover;
   object-position: bottom;
+  transition: 0.4s;
+}
+
+.card-image img:hover {
+  opacity: 0.3;
 }
 
 .card-content {
